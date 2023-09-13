@@ -1,22 +1,23 @@
-
-// Add types here. Be sure to set the types for: 
+// Add types here. Be sure to set the types for:
 // - variables
 // - function parameters
 // - function return
 
-function printCopy(str, n) {
-  let result = ''
+function printCopy(str: string, n: number): string {
+  let result = "";
   for (let i = 0; i < n; i += 1) {
-    result += str + '\n'
+    result += str + "\n";
   }
-  return result
+  return result;
 }
 
-console.log(printCopy('hello', 3))
+console.log(printCopy("hello", 3));
 
-// Compile the code and check what type script says: 
+// Compile the code and check what type script says:
 // tsc example-3.ts
 
-export {
-  printCopy
-}
+// hello
+// hello
+// hello
+
+export { printCopy };
